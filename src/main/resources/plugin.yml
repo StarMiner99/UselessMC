@@ -1,0 +1,50 @@
+name: UselessMC
+version: 1.8.2
+main: nl.starminer99.UselessMC.UselessMC
+api-version: '1.16'
+load: POSTWORLD
+author: starminer99
+
+commands:
+  discord:
+    description: Get discord invitation link.
+    usage: /<command>
+    permission: useless.perm.discord
+    permission-message: You do not have permission to use this command.
+  website:
+    description: Get Website link.
+    usage: /<command>
+    aliases: ["homepage", "about"]
+    permission: useless.perm.website
+    permission-message: You do not have permission to use this command.
+  dynmapweb:
+    description: Get DynMap link
+    usage: /<command>
+    aliases: ["dm"]
+    permission: useless.perm.dynmap
+    permission-message: You do not have permission to use this command.
+  spawn:
+    description: Teleport to World Spawn.
+    usage: /<command>
+    aliases: ["tpSpawn"]
+    permission: useless.perm.tpSpawn
+    permission-message: You do not have permission to use this command.
+
+permissions:
+  useless.perm.discord:
+    description: Allows the user to execute /discord.
+    default: true
+  useless.perm.website:
+    description: Allows the user to execute /website.
+    default: true
+  useless.perm.dynmap:
+    description: Allows the user to execute /dynmapweb
+    default: true
+
+  useless.perm.chatcolor:
+    description: Allows the user to use & color codes.
+    default: false
+
+  useless.perm.tpSpawn:
+    description: Allows the user to teleport to World Spawn.
+    default: true
